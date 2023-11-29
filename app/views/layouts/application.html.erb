@@ -11,6 +11,12 @@
   </head>
 
   <body>
+  <div class="professional">
+    <% if request.path == "/professionals" %>
+      <%=render 'professionals/menu_profissional' %>
+    <% end %>
+  </div>
+
     <%= yield %>
   </body>
 </html>
