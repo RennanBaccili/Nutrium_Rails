@@ -23,7 +23,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
-    @user.save ? (redirect_to @user) : (render :new)
+    @user.save ? (redirect_to professionals_url(user_id: @user)) : (render :new)
   end
 
   # PATCH/PUT /users/1

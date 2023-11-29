@@ -7,8 +7,12 @@ Rails.application.routes.draw do
   root 'home#index'
   resources :users
 
+
   get '/professionals', to: 'professionals#index'
 
-  # Defines the root path route ("/")
-  # root "posts#index"
+  # Dessa forma, a rota /professionals ainda apontará para a ação index no controlador
+  # ProfessionalsController, enquanto as rotas específicas /professionals/home e
+  # /professionals/afazeres serão manipuladas pelos controladores e ações específicos
+  # dentro do namespace Professionals
+
 end
