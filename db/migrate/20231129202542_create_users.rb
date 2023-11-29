@@ -1,0 +1,17 @@
+class CreateUsers < ActiveRecord::Migration[7.1]
+  def change
+    create_table :users do |t|
+      t.string :full_name
+      t.string :email
+      t.string :password
+      t.string :gender
+      t.string :country
+      t.date :date_of_birth
+      t.string :phone
+      t.string :profession
+      t.string :status
+
+      t.timestamps
+    end
+  end
+end
