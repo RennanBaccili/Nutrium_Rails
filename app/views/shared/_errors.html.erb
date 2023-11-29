@@ -1,0 +1,9 @@
+<% if object.errors.any? %>
+  <% if field.nil? || object.errors[field].any? %>
+    <% object.errors[field].each do |message| %>
+      <p class="error">
+        <%= "#{field}: #{message}" %>
+      </p>
+    <% end %>
+  <% end %>
+<% end %>

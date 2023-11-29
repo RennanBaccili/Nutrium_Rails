@@ -1,0 +1,17 @@
+<header class="menu">
+  <nav class="menu-content">
+    <div class="menu-logo">
+      <%= link_to(root_path) do %>
+        <%= image_tag('logo/logo-verde.svg', alt: 'logo Verde', class: 'logo-img') %>
+      <%end %>
+    </div>
+    <ul class="menu-nav">
+      <li><a href="#">Produto</a></li>
+      <li><a href="#">Preço</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Nutrição para empresas</a></li>
+      <li><button><%= link_to 'Experimente Grátis', new_user_path %></button></li>
+      <li><a href="#">Fazer login  -></a></li>
+    </ul>
+  </nav>
+</header>

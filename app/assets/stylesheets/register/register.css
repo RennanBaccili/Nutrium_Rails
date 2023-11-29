@@ -1,0 +1,39 @@
+
+.register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    width: 100%;
+}
+
+.register-content{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    border-radius: 1vh;
+    padding: 2vh;
+    width: 50%;
+    gap: 2vh;
+    color: #309873;
+}
+
+.btn-register{
+    background:#EA9F77;
+    color: white;
+    border: 1px solid #EA9F77;
+    padding: 1vh;
+    margin-top:1vh;
+    cursor: pointer;
+}
+
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; /* Define um valor negativo para que a div fique por baixo de outras */
+}

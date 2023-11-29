@@ -1,9 +1,9 @@
-<h1>New user</h1>
-
-<%= render "form", user: @user %>
-
+<%= image_tag('logo/background.png', alt: 'logo Verde', class: 'background') %>
+<section class="register">
+  <div class="register-content">
+    <h1>Você está a 1 minuto de testar grátis o Nutrium!</h1>
+    <%= render "form", user: @user %>
+  </div>
+</section>
 <br>
 
-<div>
-  <%= link_to "Back to users", users_path %>
-</div>

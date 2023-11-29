@@ -1,0 +1,51 @@
+.menu{
+    display: flex;
+    width: 100%;
+    background: white;
+    justify-content: center;
+}
+/*menu-content < menu*/
+.menu-content{
+    display:flex;
+    align-items: center;
+    max-width: 110vh;
+    height: 8vh;
+    gap: 5vh;
+}
+/*menu-logo < menu-content*/
+.menu-logo{
+}
+.logo-img{
+    width: 15vh;
+}
+/*menu-bar < menu-content*/
+.menu-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    align-items: center;
+}
+
+.menu-nav li, a {
+    color: #309873;
+    font-size: 2vh;
+}
+
+.menu-nav li:hover{
+    font-weight: lighter;
+    color: #267a5c;
+}
+.menu-nav li button {
+    color: #FFFFFF;
+    font-size: 1vh;
+    background: #EA9F77;
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.menu-nav li button:hover {
+    background: #e79265;
+
+}
+
