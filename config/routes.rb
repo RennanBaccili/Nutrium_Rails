@@ -6,6 +6,9 @@ Rails.application.routes.draw do
 
   root 'home#index'
   resources :users
+
+  get '/professionals', to: 'professionals#index'
+
   # Defines the root path route ("/")
   # root "posts#index"
 end
