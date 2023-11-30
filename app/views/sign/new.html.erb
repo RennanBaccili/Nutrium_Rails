@@ -1,0 +1,5 @@
+<%= form_for @sign_form, url: 'sign_path', as: :sign do |form| %>
+  <%= form.label :email, "Whast's your email ?" %>
+  <%= form.email_field :email %>
+  <%= form.submit "Create your account" %>
+<% end %>

@@ -1,18 +1,16 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
   # Can be used by load balancers and uptime monitors to verify that the app is live.
-  get "up" => "rails/health#show", as: :rails_health_check
 
   root 'home#index'
   resources :users
 
-
   get '/professionals', to: 'professionals#index'
 
-  # Dessa forma, a rota /professionals ainda apontará para a ação index no controlador
-  # ProfessionalsController, enquanto as rotas específicas /professionals/home e
-  # /professionals/afazeres serão manipuladas pelos controladores e ações específicos
-  # dentro do namespace Professionals
-
+  route :sign do
+    create 'sign', as: 'sign'
+  end
 end
