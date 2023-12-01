@@ -20,16 +20,12 @@
     <%= form.label :gender, style: "display: block" %>
     <div class="gender">
       <div>
-        <%= form.radio_button :gender, 'masculino' %>
-        <%= form.label :gender_masculino, 'Masculino' %>
+        <%= form.radio_button :gender, 'm' %>
+        <%= form.label :gender_masculino, 'masculino' %>
       </div>
       <div>
-        <%= form.radio_button :gender, 'feminino' %>
-        <%= form.label :gender_feminino, 'Feminino' %>
-      </div>
-      <div>
-        <%= form.radio_button :gender, 'outro' %>
-        <%= form.label :gender_outro, 'Outro' %>
+        <%= form.radio_button :gender, 'f' %>
+        <%= form.label :gender_feminino, 'feminino' %>
       </div>
       <%= render 'shared/errors', object: user, field: :gender %>
     </div>
@@ -64,7 +60,7 @@
     </div>
     <div>
 
-      <%= form.submit class: 'btn-inscrever-se' %>
+      <%= form.submit class: 'btn-sing-up' %>
     </div>
   <% end %>
 </section>

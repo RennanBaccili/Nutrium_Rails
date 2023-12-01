@@ -1,4 +1,4 @@
-// Import and inscrever-se all your controllers from the importmap under controllers/*
+// Import and sing-up all your controllers from the importmap under controllers/*
 
 import { application } from "controllers/application"
 

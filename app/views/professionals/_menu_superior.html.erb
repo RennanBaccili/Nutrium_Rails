@@ -1,0 +1,37 @@
+
+<header class="menu-higher">
+  <nav class="menu-higher-content">
+    <button class='btn'>
+      <%= image_tag 'icons/list.svg', class: 'menu-button'%>
+    </button>
+    <ul>
+      <li class="silence">Silenciar</li>
+      <li class="experimental">Período Experimental</li>
+      <li class="days">10 dias restantes</li>
+      <li class="buy">Asssinar</li>
+    </ul>
+    <div class="dropdown">
+      <% if @user.gender == 'm' %>
+        <%= image_tag 'icons/men.png', class: 'img' %>
+      <% else %>
+        <%= image_tag 'icons/girl.png', class: 'img' %>
+      <% end %>
+      <button class="dropbtn"><%= @user.full_name %></button>
+      <div class="dropdown-content">
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+      </div>
+    </div>
+  </nav>
+  <section class="page-inf">
+    <div class="page-inf-title">
+      <h1> Página do profissional</h1>
+      <p> Veja as suas próximas consultas e informações sobre a sua atividade </p>
+    </div>
+    <div class="page-inf-status">
+      <span class="status"><%= @user.status %></span>
+      <p><time datetime="2023-11-28T12:30:00"><%= @time %></time></p>
+    </div>
+  </section>
+</header>

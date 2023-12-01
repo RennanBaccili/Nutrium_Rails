@@ -43,48 +43,10 @@
     </ul>
     <div class="aside-menu-footer">
       <ul>
-        <li>Agendar Consulta</li>
-        <li>Cadastrar cliente</li>
+        <li class="consultar">Agendar Consulta</li>
+        <li class="cadastrar">Cadastrar cliente</li>
       </ul>
     </div>
   </nav>
 </header>
-<header class="menu-higher">
-  <nav class="menu-higher-content">
-    <button class='btn'>
-      <%= image_tag 'icons/list.svg', class: 'menu-button'%>
-    </button>
-    <ul>
-      <li class="silence">Silenciar</li>
-      <li class="experimental">Período Experimental</li>
-      <li class="days">10 dias restantes</li>
-      <li class="buy">Asssinar</li>
-    </ul>
 
-
-    <div class="dropdown" data-js-dropdown>
-      <%= button_tag class: 'dropdown-button' do %>
-        <%= @user.full_name %>
-      <% end %>
-      <div class="dropdown-content">
-        <a href="https://www.example.com/link1">Link 1</a>
-        <a href="https://www.example.com/link2">Link 2</a>
-        <a href="https://www.example.com/link3">Link 3</a>
-        <a href="https://www.example.com/link4">Link 4</a>
-        <a href="https://www.example.com/link5">Link 5</a>
-      </div>
-    </div>
-
-
-  </nav>
-  <section class="page-inf">
-    <div class="page-inf-title">
-      <h1> Página do profissional</h1>
-      <p> Veja as suas próximas consultas e informações sobre a sua atividade </p>
-    </div>
-    <div class="page-inf-status">
-      <span>Status</span>
-      <p><time datetime="2023-11-28T12:30:00"><%= @time %></time></p>
-    </div>
-  </section>
-</header>

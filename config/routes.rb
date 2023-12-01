@@ -10,7 +10,13 @@ Rails.application.routes.draw do
 
   get '/professionals', to: 'professionals#index'
 
+  #teste
   route :sign do
     create 'sign', as: 'sign'
   end
+  resources :pages, only: [:index] do
+    get 'open_modal', on: :collection
+    post 'close_modal', on: :collection
+  end
+
 end

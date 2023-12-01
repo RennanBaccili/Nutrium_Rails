@@ -20,6 +20,11 @@ gem 'pg', '~> 1.2'
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem 'importmap-rails'
 
+#Isso acontece interceptando todos os cliques em <a href>links
+# do mesmo domínio. Quando você clica em um link qualificado, o
+# Turbo Drive impede que o navegador o siga, altera o URL do navegador
+# usando a API de histórico , solicita a nova página usando fetche,
+# em seguida, renderiza a resposta HTML
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem 'turbo-rails'
 

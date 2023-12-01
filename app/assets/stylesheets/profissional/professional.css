@@ -1,0 +1,18 @@
+.professional{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color:#F3F3F4;
+}
+
+.professional-menu-superior{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+}
+
+.professional-main-home {
+    display: flex;
+    flex-direction: column;
+}

@@ -3,6 +3,7 @@
     height: 100vh;
     display: flex;
     flex-direction: row;
+    width: 20vh;
 }
 .aside-menu-content{
     display: flex;
@@ -59,19 +60,36 @@
     width: 100%;
 }
 .aside-menu-footer ul li{
+    display: flex;
+    align-items: center;
     background-color: #309873;
+    justify-content: center;
+    font-size: 1.5vh;
+    font-weight: bold;
     width: 100%;
-    padding: 10px;
+    height: 5vh;
     color: white;
+}
+
+.aside-menu-footer .consultar:hover {
+    background-color: #107B62;
+}
+
+.aside-menu-footer .cadastrar{
+    background-color: #107B62;
+}
+
+.aside-menu-footer .cadastrar:hover {
+    background-color: #0b5746;
 }
 
 /*Menu Superior*/
 .menu-higher{
-    height: 7.5vh;
+    min-height: 7.5vh;
     width: 100%;
-    border-bottom: 1px solid #dadada;
     display: flex;
     flex-wrap: wrap;
+    background: white;
 }
 
 .menu-higher-content{
@@ -110,54 +128,69 @@
     color: #545454;
 }
 
-/*user*/
+/*user button*/
+
 .dropdown {
-    margin-right: 2vh;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
     position: relative;
-    display: inline-block;
+    margin-right: 4vh; /* Ajuste o valor conforme necessário para afastar da borda direita */
+    gap: 1vh;
+}
+.dropdown .img{
+    border-radius: 50%;
+    height: 30px;
 }
 
-.dropdown-button {
-    background-color: #555;
-    color: #fff;
-    padding: 10px;
+.dropbtn {
+    background-color: white;
     border: none;
-    cursor: pointer;
+    height: 6vh;
+    font-size: 1.5vh;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    margin-top: 20vh; /* Use margin-top em vez de margin-left para afastar do topo */
+    right: 0.2vh;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+
 }
 
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
+    width: 200px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown.active .dropdown-content {
-    display: block;
+    background-color: #f1f1f1;
 }
 
 /*menu abaixo*/
 
 .page-inf{
-    height: 9vh;
+    min-height: 10vh;
     border-bottom: 1px solid #dadada;
+    border-top: 1px solid #dadada;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: white;
 }
 .page-inf p{
     color: rgba(104, 115, 145, 0.7);
@@ -175,7 +208,7 @@
     margin-right: 2vh;
 }
 
-.page-inf span{
+.page-inf .status{
     display: block;
     text-align: right;
     font-size: 2.5vh;

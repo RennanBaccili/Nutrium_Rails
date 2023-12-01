@@ -1,0 +1,80 @@
+.card{
+    display: flex;
+    flex-direction: row;
+    margin: 14vh 0 0 4vh;
+    min-height: 20vh;
+    width: 70%;
+    border: 1px solid #dadada;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+.card-left{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 0 0 20px;
+    justify-content: space-around;
+}
+.card-left-title{
+    color: #1f1f1f;
+}
+/* card left */
+.card-left-client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vh;
+}
+
+.card-left-client-img{
+    border-radius: 50%;
+    height: 6vh;
+}
+.card-left-client-text{
+
+}
+.card-left-client-text-title{
+    color: #313131;
+}
+.card-left-client-prof{
+    color: #595959;
+}
+.card-left-client-inf{
+    margin-top: 1vh;
+    font-size: 15px;
+    color: #9f9f9f;
+}
+.card-right{
+    display: flex;
+    width: 50%;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 2vh;
+}
+.card-right-time{
+
+}
+.card-right-buttons{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-right-buttons button{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 23vh;
+    font-size: 1.4vh;
+    padding: 5px;
+    border: 1px solid #dadada;
+}
+
+.card-right-button-green{
+    background-color: #18A689;
+    color:white;
+}
